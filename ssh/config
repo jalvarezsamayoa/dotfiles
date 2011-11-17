@@ -124,3 +124,8 @@ Host sqlslave
   HostName 174.129.91.245
   IdentityFile ~/.ssh/cnf_deploy.key
   User root
+
+Host heroku
+  Hostname heroku.com
+  IdentityFile ~/.ssh/id_vamosa_heroku_rsa.pub
+  User git
