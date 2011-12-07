@@ -129,3 +129,8 @@ Host heroku
   Hostname heroku.com
   IdentityFile ~/.ssh/id_vamosa_heroku_rsa.pub
   User git
+
+Host xbmc
+  HostName 192.168.1.5
+  User xbmc
+  IdentityFile ~/.ssh/id_rsa

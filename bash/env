@@ -3,15 +3,9 @@ export PATH=$PATH:$EC2_HOME/bin
 export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
 export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
 
-export SCALA_HOME=$HOME/java/scala
-export AKKA_HOME=$HOME/code/akka
 export M2_HOME=$HOME/java/maven
-export TC_HOME=$HOME/java/terracotta
 export JBOSS_HOME=$HOME/code/jboss
 export ANT_HOME=$HOME/java/ant
-export GWT_HOME=$HOME/java/gwt
-export JRUBY_HOME=/usr/local/jruby-1.5.6
-export GLASSFISH_HOME=$HOME/java/glassfish
 export TMP=$HOME/tmp
 export RACK_ENV=development
 export NODE_PATH=$HOME/.node_libraries
