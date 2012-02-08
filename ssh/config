@@ -1,136 +1,19 @@
-Host chef
-  HostName chef.pixelballistics.com
-  IdentityFile ~/.ssh/id_rsa
-  User root
-
-Host www
-  HostName blogs.pixelballistics.com
-  IdentityFile ~/.ssh/id_rsa
-  User root
-
-Host chefv
-  HostName chef.vamosacloud.com
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host rf1
-  HostName 75.101.167.252
-  IdentityFile ~/.ssh/deploy_id_rsa
-  User deploy
-  
-Host rf1root
-  HostName 75.101.167.252
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-  
-Host rf2
-  HostName 174.129.210.69
-  IdentityFile ~/.ssh/deploy_id_rsa
-  User deploy
-
-Host rf2root
-  HostName 174.129.210.69
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host stage1
-  HostName fe3.vamosa.com
-  IdentityFile ~/.ssh/deploy_id_rsa
-  User deploy
-  
-Host stage1root
-  HostName fe3.vamosa.com
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-  
-Host stage2
-  HostName fe4.vamosa.com
-  IdentityFile ~/.ssh/deploy_id_rsa
-  User deploy
-
-Host stage2root
-  HostName fe4.vamosa.com
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host cnfdbmaster
-  Hostname ec2-75-101-242-54.compute-1.amazonaws.com
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host rails-master
-  HostName ec2-174-129-93-249.compute-1.amazonaws.com
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host vcm-master
-  HostName ec2-75-101-237-134.compute-1.amazonaws.com
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host vcm1
-  HostName ec2-67-202-35-215.compute-1.amazonaws.com
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host desktop
-  HostName ijonas-desktop.vamosa.com
-  User ijonas
-  
-Host gems
-  HostName gems.vamosa.com
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host den
-  HostName 67.23.12.147
-  User ijonas
-
-Host home
-  HostName ijonas.is-a-geek.com
-  User ijonas
-
-Host hpa-apps
-  HostName ec2-67-202-57-58.compute-1.amazonaws.com
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host redmast
-  HostName 67.202.63.233
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host redslave
-  HostName 67.202.18.72
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host mongom
-  HostName 174.129.187.228
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host mongos
-  HostName 204.236.201.224
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host sqlmast
-  HostName 204.236.223.89
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host sqlslave
-  HostName 174.129.91.245
-  IdentityFile ~/.ssh/cnf_deploy.key
-  User root
-
-Host heroku
-  Hostname heroku.com
-  IdentityFile ~/.ssh/id_vamosa_heroku_rsa.pub
-  User git
-
 Host xbmc
   HostName 192.168.1.5
   User xbmc
+  IdentityFile ~/.ssh/id_rsa
+
+Host katrine1
+  HostName ec2-107-21-150-75.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/id_ea_dev_rsa
+  
+Host katrine2
+  HostName ec2-23-20-39-24.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/id_ea_dev_rsa
+  
+Host katrinep
+  HostName katrine.emergeadapt.com
+  User ubuntu
   IdentityFile ~/.ssh/id_rsa

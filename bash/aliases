@@ -34,6 +34,7 @@ alias cjboss='cd ~/code/jboss-git'
 alias ccspec='cd ~/code/cspec'
 alias cbridge='cd ~/code/bridge'
 alias h='history'
+alias hq='history | grep'
 
 alias tb2='tar -jxvf'
 alias tbz='tar -zxvf'
