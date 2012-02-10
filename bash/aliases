@@ -37,6 +37,7 @@ alias cjboss='cd ~/code/jboss-git'
 alias ccspec='cd ~/code/cspec'
 alias cbridge='cd ~/code/bridge'
 alias h='history'
+alias hq='history | grep'
 
 alias tb2='tar -jxvf'
 alias tbz='tar -zxvf'
@@ -75,3 +76,5 @@ function ccdn { /usr/bin/scp -i $HOME/.ssh/cnf_deploy.key root@$1:$2 $2;}
 function ccup { /usr/bin/scp -i $HOME/.ssh/cnf_deploy.key $1 root@$2:$1;}
 
 function zipdir { /usr/bin/tar -jcf $1.tar.bz2 $1/; }
+
+function find_in { find . -name $1 -print | xargs grep --color=auto -inH $2; }
