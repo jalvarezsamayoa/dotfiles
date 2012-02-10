@@ -25,6 +25,9 @@ alias lal='ls -al'
 alias lh='ls -lh'
 alias glog="git log --pretty=tformat:'%h %Cblue%cr%Creset %cn %Cgreen%s%Creset'"
 
+alias edit_env="vim $HOME/bin/dotfiles/bash"
+alias reload_env="source $HOME/.bashrc"
+
 alias jrake='jruby -S rake'
 alias jgem='jruby -S gem'
 alias jss='jruby -S script/server'
@@ -48,8 +51,11 @@ alias nginx-reload="sudo /opt/local/sbin/nginx -s reload"
 
 alias ss="./script/server"
 
-alias mysqlstart="sudo /usr/local/mysql/bin/mysqld_safe --datadir=/usr/local/mysql/data"
-alias mysqlstop="/usr/local/mysql/bin/mysqladmin -uroot shutdown"
+alias mysqlstart="cd /usr/local/Cellar/mysql/5.5.15 ; /usr/local/Cellar/mysql/5.5.15/bin/mysqld_safe"
+alias mysqlstop="/usr/local/Cellar/mysql/5.5.15/bin/mysqladmin -uroot shutdown"
+
+alias pgstart="pg_ctl -D /Volumes/Databases/postgres -l /Volumes/Databases/postgres/server.log start"
+alias pgstop="pg_ctl -D /Volumes/Databases/postgres stop -s -m fast"
 
 alias gojruby="export PATH=$JRUBY_HOME/bin:$PATH"
 
@@ -62,8 +68,6 @@ alias mongoteststop="/usr/local/bin/mongo --port 27018 --eval \"db.shutdownServe
 alias redisstart="sudo redis-server /etc/redis.conf"
 alias redisteststart="sudo redis-server /etc/redistest.conf"
 alias redisstop="sudo /usr/bin/killall -9 redis-server"
-
-function mvim { /usr/local/Cellar/macvim/HEAD/MacVim.app/Contents/MacOS/Vim -g $*; }
 
 function cssh { /usr/bin/ssh -i $HOME/.ssh/cnf_deploy.key root@$1; }
 
